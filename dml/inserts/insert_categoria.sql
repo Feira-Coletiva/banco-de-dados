@@ -1,0 +1,1 @@
+INSERT INTO categorias(nome) VALUES("Legumes");

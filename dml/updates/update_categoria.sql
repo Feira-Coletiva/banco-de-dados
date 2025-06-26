@@ -1,0 +1,1 @@
+UPDATE categorias SET nome="Legumes" WHERE id=1;
