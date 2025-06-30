@@ -1,0 +1,1 @@
+UPDATE clientes SET nome="Carllos", telefone="(13)91111-3333", senha="carlitos123", rg="1234567", endereco="11011-111", reg_de_atuacao="Grande Florianópolis", chave_pix="13911113333" WHERE id=1;

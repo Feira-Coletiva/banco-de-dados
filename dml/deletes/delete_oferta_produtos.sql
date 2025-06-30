@@ -1,0 +1,1 @@
+DELETE FROM ofertas WHERE id=1;

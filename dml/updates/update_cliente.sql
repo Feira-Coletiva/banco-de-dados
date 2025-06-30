@@ -1,0 +1,1 @@
+UPDATE clientes SET nome="Artur", email="art@exemplo.com", telefone="(11)91111-1111", senha="tutu123" WHERE id=1;

@@ -1,8 +1,10 @@
-CREATE TABLE IF NOT EXISTS categoria (
+-- Table Categorias
+CREATE TABLE IF NOT EXISTS categorias (
     id INT NOT NULL AUTO_INCREMENT,
     nome VARCHAR(150) NOT NULL
 ) ENGINE=InnoDB;
 
+-- Table Clientes
 CREATE TABLE IF NOT EXISTS clientes (
     id INT NOT NULL AUTO_INCREMENT,
     nome VARCHAR(150) NOT NULL,
@@ -11,14 +13,19 @@ CREATE TABLE IF NOT EXISTS clientes (
     senha VARCHAR(150) NOT NULL
 ) ENGINE=InnoDB;
 
+-- Table Vendedores
 CREATE TABLE IF NOT EXISTS vendedores (
-    id_cliente INT NOT NULL,
+    id INT NOT NULL AUTO_INCREMENT,
+    nome VARCHAR(150) NOT NULL,
+    telefone VARCHAR(20) NOT NULL,
+    senha VARCHAR(150) NOT NULL,
     RG INT NOT NULL,
     endereco VARCHAR(150) NOT NULL,
     reg_de_atuacao VARCHAR(150) NOT NULL,
-    chave_pix VARCHAR(50) NOT NULL
+    chave_pix VARCHAR(50) NOT NULL,
 ) ENGINE=InnoDB;
 
+-- Table Ofertas
 CREATE TABLE IF NOT EXISTS ofertas (
     id INT NOT NULL AUTO_INCREMENT,
     titulo VARCHAR(150) NOT NULL,
@@ -27,7 +34,7 @@ CREATE TABLE IF NOT EXISTS ofertas (
     id_vendedor INT NOT NULL
 ) ENGINE=InnoDB;
 
-# Table Produtos
+-- Table Produtos
 CREATE TABLE IF NOT EXISTS produtos (
     id INT NOT NULL AUTO_INCREMENT,
     nome VARCHAR(150) NOT NULL,

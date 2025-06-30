@@ -17,19 +17,32 @@ banco-de-dados/
 │   └── 04_indexes.sql 
 ├── dml/ 
 │   ├── inserts/
+│   │   ├── insert_categorias.sql
+│   │   ├── insert_clientes.sql
+│   │   ├── insert_vendedores.sql
 │   │   ├── insert_exemplo.sql
 │   │   └── ...
 │   ├── updates/
+│   │   ├── update_categorias.sql
+│   │   ├── update_clientes.sql
+│   │   ├── update_vendedores.sql
 │   │   ├── update_exemplo.sql
 │   │   └── ...
 │   └── deletes/
-│       ├── delete_usuarios.sql
+│       ├── delete_categorias.sql
+│       ├── delete_clientes.sql
+│       ├── delete_vendedores.sql
+│       ├── delete_exemplos.sql
 │       └── ...
 ├── consultas/ 
+│   ├── select_categorias.sql
+│   ├── select_clientes.sql
+│   ├── select_vendedores.sql
 │   ├── select_usuarios.sql
 │   ├── relatorios.sql
 │   └── ...
 └── scripts_completos/
+    ├── script_completo_v1.sql 
     ├── banco_completo.sql 
     └── popular_base_completa.sql 
 ``` 

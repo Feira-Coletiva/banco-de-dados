@@ -13,6 +13,7 @@ CREATE TABLE IF NOT EXISTS categorias (
     	PRIMARY KEY (id)
 ) ENGINE=InnoDB;
 
+# Tabela Clientes
 CREATE TABLE IF NOT EXISTS clientes (
     id INT NOT NULL AUTO_INCREMENT,
     nome VARCHAR(150) NOT NULL,
@@ -23,21 +24,21 @@ CREATE TABLE IF NOT EXISTS clientes (
 		PRIMARY KEY (id)
 ) ENGINE=InnoDB;
 
+# Tabela Vendedor
 CREATE TABLE IF NOT EXISTS vendedores (
-    id_cliente INT NOT NULL,
-    RG INT NOT NULL,
+    id INT NOT NULL AUTO_INCREMENT,
+    nome VARCHAR(150) NOT NULL,
+    telefone VARCHAR(20) NOT NULL,
+    senha VARCHAR(150) NOT NULL,
+    rg INT NOT NULL,
     endereco VARCHAR(150) NOT NULL,
     reg_de_atuacao VARCHAR(150) NOT NULL,
     chave_pix VARCHAR(50) NOT NULL,
     CONSTRAINT pk_vendedor 
-    	PRIMARY KEY (id_cliente),
-    CONSTRAINT fk_vendedor_cliente 
-    	FOREIGN KEY (id_cliente)
-		REFERENCES clientes(id)
-		ON DELETE CASCADE
-		ON UPDATE CASCADE
+    	PRIMARY KEY (id)
 ) ENGINE=InnoDB;
 
+# Tabela Oferta
 CREATE TABLE IF NOT EXISTS ofertas (
     id INT NOT NULL AUTO_INCREMENT,
     titulo VARCHAR(150) NOT NULL,
@@ -48,10 +49,10 @@ CREATE TABLE IF NOT EXISTS ofertas (
     	PRIMARY KEY (id),
     CONSTRAINT fk_oferta_vendedor 
     	FOREIGN KEY (id_vendedor)
-		REFERENCES vendedores(id_cliente)
+		REFERENCES vendedores(id)
 ) ENGINE=InnoDB;
 
-# Table Produtos
+# Table Produto
 CREATE TABLE IF NOT EXISTS produtos (
     id INT NOT NULL AUTO_INCREMENT,
     nome VARCHAR(150) NOT NULL,

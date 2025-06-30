@@ -1,0 +1,1 @@
+DELETE FROM vendedores WHERE id=1;
