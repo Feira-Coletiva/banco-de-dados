@@ -1,0 +1,1 @@
+UPDATE ofertas SET titulo="Melhor Safra de Mel", descricao="É mel que não acaba mais", disp_status=TRUE, id_vendedor=1  WHERE id=1;
