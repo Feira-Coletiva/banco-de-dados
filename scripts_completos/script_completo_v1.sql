@@ -5,7 +5,7 @@ USE sistema_feira_coletiva;
 
 -- Create Tables ---------------------------------------------------------------------------------------------
 
-# Tabela Categorias
+-- Tabela Categorias
 CREATE TABLE IF NOT EXISTS categorias (
     id INT NOT NULL AUTO_INCREMENT,
     nome VARCHAR(150) NOT NULL,
@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS categorias (
     	PRIMARY KEY (id)
 ) ENGINE=InnoDB;
 
-# Tabela Clientes
+-- Tabela Clientes
 CREATE TABLE IF NOT EXISTS clientes (
     id INT NOT NULL AUTO_INCREMENT,
     nome VARCHAR(150) NOT NULL,
@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS clientes (
 		PRIMARY KEY (id)
 ) ENGINE=InnoDB;
 
-# Tabela Vendedor
+-- Tabela Vendedor
 CREATE TABLE IF NOT EXISTS vendedores (
     id INT NOT NULL AUTO_INCREMENT,
     nome VARCHAR(150) NOT NULL,
@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS vendedores (
     	PRIMARY KEY (id)
 ) ENGINE=InnoDB;
 
-# Tabela Oferta
+-- Tabela Oferta
 CREATE TABLE IF NOT EXISTS ofertas (
     id INT NOT NULL AUTO_INCREMENT,
     titulo VARCHAR(150) NOT NULL,
@@ -52,11 +52,11 @@ CREATE TABLE IF NOT EXISTS ofertas (
 		REFERENCES vendedores(id)
 ) ENGINE=InnoDB;
 
-# Table Produto
+-- Table Produto
 CREATE TABLE IF NOT EXISTS produtos (
     id INT NOT NULL AUTO_INCREMENT,
     nome VARCHAR(150) NOT NULL,
-    unidade_medida ENUM('kg', 'ml', 'un') NOT NULL DEFAULT 'kg',
+    unidade_medida ENUM('KG', 'ML', 'UN') NOT NULL DEFAULT 'KG',
     medida DOUBLE NOT NULL,
     preco DOUBLE NOT NULL,
     qtd_estoque INT NOT NULL,

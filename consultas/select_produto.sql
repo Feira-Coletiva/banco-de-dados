@@ -1,4 +1,4 @@
 /*Listar cadastros no banco*/
-SELECT * FROM categorias;
+SELECT * FROM produtos;
 /*Retornar os dados do banco*/
-SELECT * FROM categorias WHERE id=1;
+SELECT * FROM produtos WHERE id=1;

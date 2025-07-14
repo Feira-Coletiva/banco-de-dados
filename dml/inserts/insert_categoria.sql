@@ -1,1 +1,1 @@
-INSERT INTO categorias(nome) VALUES("Legumes");
+INSERT INTO categorias(nome) VALUES("Grão");

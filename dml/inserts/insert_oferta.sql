@@ -1,3 +1,3 @@
-INSERT INTO ofertas(titulo, descricao, disp_status, id_vendedor) VALUES("Melhor Safra de Mel", "É mel que não acaba mais", TRUE, 1);
+INSERT INTO ofertas(titulo, descricao, disp_status, id_vendedor) VALUES("Melhor Safra de Arroz", "É a época do arroz", TRUE, 1);
 
 
